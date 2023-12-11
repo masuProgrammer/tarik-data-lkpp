@@ -52,7 +52,7 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
         df = pd.DataFrame(data)
 
         # Save DataFrame to Excel
-        df.to_excel(nama_file, index=False, encoding='utf-8')
+        df.to_excel(nama_file, index=False)
 
         print(f"Data telah disimpan dalam file {nama_file}")
         return df
