@@ -1,4 +1,4 @@
-data.pbj.my.id {
-    root * /path/to/your/data_api
-    file_server
-}
+data.pbj.my.id
+
+root * data_api
+file_server
