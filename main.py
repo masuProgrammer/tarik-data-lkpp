@@ -76,8 +76,11 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
         print(f"Data telah disimpan dalam file Parquet: {nama_file_parquet}")
 
         return df
-    except requests.exceptions.RequestException as e:
-        print(f"Error saat memanggil API: {e}")
+     except requests.exceptions.RequestException as e:
+        error_message = f"Error saat memanggil API: {e}"
+        print(error_message)
+        send_telegram_message(error_message)
+
         return None
 
 # Contoh membaca CSV
