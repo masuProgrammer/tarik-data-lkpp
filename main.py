@@ -83,6 +83,14 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
 
         return None
 
+     except json.JSONDecodeError as json_error:
+        # Handle JSON decoding error
+        error_message = f"Error decoding JSON: {json_error}. Response text: {response.text}"
+        print(error_message)
+        send_telegram_message(error_message)
+
+        return None
+
 # Contoh membaca CSV
 nama_file_csv = "database.csv"
 data_csv = baca_csv(nama_file_csv)
