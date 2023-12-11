@@ -77,7 +77,8 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
 
         return df
     except requests.exceptions.RequestException as e:
-        error_message = f"Error saat memanggil API: {e}"
+        url = f"{url_api}/{tahun_kode_daerah}"
+        error_message = f"Error saat memanggil API: {url_api}/{tahun_kode_daerah}"
         print(error_message)
         send_telegram_message(error_message)
 
@@ -85,7 +86,7 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
 
     except json.JSONDecodeError as json_error:
         # Handle JSON decoding error
-        error_message = f"Error decoding JSON: {json_error}. Response text: {response.text}"
+        error_message = f"Error URL:{}\nError decoding JSON: {json_error}. Response text: {response.text}"
         print(error_message)
         send_telegram_message(error_message)
 
