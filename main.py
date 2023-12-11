@@ -76,14 +76,14 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
         print(f"Data telah disimpan dalam file Parquet: {nama_file_parquet}")
 
         return df
-     except requests.exceptions.RequestException as e:
+    except requests.exceptions.RequestException as e:
         error_message = f"Error saat memanggil API: {e}"
         print(error_message)
         send_telegram_message(error_message)
 
         return None
 
-     except json.JSONDecodeError as json_error:
+    except json.JSONDecodeError as json_error:
         # Handle JSON decoding error
         error_message = f"Error decoding JSON: {json_error}. Response text: {response.text}"
         print(error_message)
