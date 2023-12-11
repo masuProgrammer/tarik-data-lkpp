@@ -46,15 +46,20 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
         if not os.path.exists(nama_folder):
             os.makedirs(nama_folder)
 
-        nama_file = f"{nama_folder}/{nama_api}{tahun}.xlsx"
+        nama_file_xlsx = f"{nama_folder}/{nama_api}{tahun}.xlsx"
+        nama_file_parquet = f"{nama_folder}/{nama_api}{tahun}.parquet"
 
         # Convert data to DataFrame
         df = pd.DataFrame(data)
 
         # Save DataFrame to Excel
-        df.to_excel(nama_file, index=False)
+        df.to_excel(nama_file_xlsx, index=False)
+        print(f"Data telah disimpan dalam file Excel: {nama_file_xlsx}")
 
-        print(f"Data telah disimpan dalam file {nama_file}")
+        # Save DataFrame to Parquet
+        df.to_parquet(nama_file_parquet, index=False)
+        print(f"Data telah disimpan dalam file Parquet: {nama_file_parquet}")
+
         return df
     except requests.exceptions.RequestException as e:
         print(f"Error saat memanggil API: {e}")
