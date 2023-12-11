@@ -13,6 +13,21 @@ def baca_csv(nama_file):
             data.append(row)
     return data
 
+def send_telegram_message(message):
+    telegram_api_url = f"https://api.telegram.org/bot1529424579:AAF-6SK5I-2iLYp_9MkI_BNYfaKYc9dOxUc/sendMessage"
+    
+    params = {
+        'chat_id': '584833440',
+        'text': message
+    }
+    
+    response = requests.get(telegram_api_url, params=params)
+    
+    if response.status_code == 200:
+        print(f"Pesan berhasil dikirim")
+    else:
+        print(f"Terjadi kesalahan saat mengirim pesan: {response.status_code}")
+
 def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
     # Parsing URL untuk mendapatkan nama API
     parsed_url = urlparse(url_api)
