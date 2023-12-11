@@ -14,10 +14,10 @@ def baca_csv(nama_file):
     return data
 
 def send_telegram_message(message):
-    telegram_api_url = f"https://api.telegram.org/bot1529424579:AAF-6SK5I-2iLYp_9MkI_BNYfaKYc9dOxUc/sendMessage"
+    telegram_api_url = f"https://api.telegram.org/bot6748527081:AAEgO61QqaMXTIi87UZ4uGff9WiW-o2FEVg/sendMessage"
     
     params = {
-        'chat_id': '584833440',
+        'chat_id': '-4060257273',
         'text': message
     }
     
