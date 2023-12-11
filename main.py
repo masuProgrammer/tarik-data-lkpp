@@ -42,11 +42,11 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
             os.makedirs(folder_output)
 
         # Penamaan file berdasarkan tahun, kode daerah, dan nama API
-        nama_folder = f"{folder_output}/{kode_daerah}/{nama_api}"
+        nama_folder = f"{folder_output}/{kode_daerah}/sirup"
         if not os.path.exists(nama_folder):
             os.makedirs(nama_folder)
 
-        nama_file = f"{nama_folder}/{tahun}.xlsx"
+        nama_file = f"{nama_folder}/{nama_api}{tahun}.xlsx"
 
         # Convert data to DataFrame
         df = pd.DataFrame(data)
