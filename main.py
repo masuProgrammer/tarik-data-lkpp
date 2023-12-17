@@ -28,7 +28,7 @@ def send_telegram_message(message):
     else:
         print(f"Terjadi kesalahan saat mengirim pesan: {response.status_code}")
 
-def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
+def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
     # Parsing URL untuk mendapatkan nama API
     parsed_url = urlparse(url_api)
     path_components = parsed_url.path.split('/')
@@ -61,7 +61,7 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
 
 
         # Penamaan file berdasarkan tahun, kode daerah, dan nama API
-        nama_folder = f"{folder_output}/{kode_daerah}/sirup"
+        nama_folder = f"{folder_output}/{kode_daerah}/{jenis_api}"
         if not os.path.exists(nama_folder):
             os.makedirs(nama_folder)
 
@@ -97,19 +97,24 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah):
 
         return None
 
-# Contoh membaca CSV
-nama_file_csv = "database.csv"
-data_csv = baca_csv(nama_file_csv)
 
-# Contoh pemanggilan API untuk setiap baris dalam CSV
-for row in data_csv:
-    url_api = row['url_api']
-    tahun = row['tahun']
-    kode_daerah = row['kode_daerah']
+def tarik_data(file,jenis_api):
+    # Contoh membaca CSV
+    nama_file_csv = file
+    data_csv = baca_csv(nama_file_csv)
 
-    data_api = panggil_api_dan_simpan(url_api, tahun, kode_daerah)
+    # Contoh pemanggilan API untuk setiap baris dalam CSV
+    for row in data_csv:
+        url_api = row['url_api']
+        tahun = row['tahun']
+        kode_daerah = row['kode_daerah']
 
-    # Lakukan hal lain dengan data API jika diperlukan
-    # if data_api:
-    #     # Contoh: print data API
-    #     # print(json.dumps(data_api, indent=2))
+        data_api = panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api)
+
+        # Lakukan hal lain dengan data API jika diperlukan
+        # if data_api:
+        #     # Contoh: print data API
+        #     # print(json.dumps(data_api, indent=2))
+
+tarik_data("database.csv","sirup")
+tarik_data("database.csv","spse")

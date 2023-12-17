@@ -147,6 +147,18 @@ url_data = {
       'urlRUP_MasterSatker' : "https://isb.lkpp.go.id/isb-2/api/6a2fa946-fd62-44e6-9d1f-9c3c9b5f9ee4/json/12171/RUP-MasterSatker/tipe/12:12/parameter/",
       'urlRUP_StrukturAnggaran' : "https://isb.lkpp.go.id/isb-2/api/dc613579-3241-4371-9c2e-a2f95b893283/json/12196/RUP-StrukturAnggaranPD/tipe/4:12/parameter/"
     },
+    'ktp': {
+      'urlRUP_SubKegiatanMaster' : "https://isb.lkpp.go.id/isb-2/api/0bd0c5fb-171a-4c12-a2c0-f6fc1759337a/json/11556/RUP-SubKegiatanMaster/tipe/4:12/parameter/",
+      'urlRUP_KegiatanMaster' : "https://isb.lkpp.go.id/isb-2/api/d8663bfe-d238-4e0d-8324-afbf608dece3/json/11547/RUP-KegiatanMaster/tipe/4:12/parameter/",
+      'urlRUP_PaketPenyediaTerumumkan' : "https://isb.lkpp.go.id/isb-2/api/50405646-142c-4c6b-b580-b2c4902d398f/json/11591/RUP-PaketPenyedia-Terumumkan/tipe/4:12/parameter/",
+      'urlRUP_PaketSwakelolaTerumumkan' : "https://isb.lkpp.go.id/isb-2/api/eae2d830-4dbc-4f9c-b41e-1b99aa0e912e/json/11555/RUP-PaketSwakelola-Terumumkan/tipe/4:12/parameter/",
+      'urlRUP_ProgramMaster' : "https://isb.lkpp.go.id/isb-2/api/218aad1d-a649-42b4-80f5-bd5a2f139a2e/json/11566/RUP-ProgramMaster/tipe/4:12/parameter/",
+      'urlRUP_PaketPenyediaLokasi' : "https://isb.lkpp.go.id/isb-2/api/15601767-f760-424a-b893-a0695cafa272/json/11592/RUP-PaketPenyediaLokasi/tipe/4:12/parameter/",
+      'urlRUP_PaketSwakelolaLokasi' : "https://isb.lkpp.go.id/isb-2/api/71fab6b4-4358-497d-847a-7d9c6ccc68f8/json/11554/RUP-PaketSwakelolaLokasi/tipe/4:12/parameter/",
+      'urlRUP_PaketAnggaranPenyedia' : "https://isb.lkpp.go.id/isb-2/api/b4e6bd3c-7f9b-4fd5-bee7-344c15b1fb05/json/11557/RUP-PaketAnggaranPenyedia/tipe/4:12/parameter/",
+      'urlRUP_MasterSatker' : "https://isb.lkpp.go.id/isb-2/api/17287b83-4ff1-462b-ad63-0193a324089a/json/11568/RUP-MasterSatker/tipe/12:12/parameter/",
+      'urlRUP_StrukturAnggaran' : "https://isb.lkpp.go.id/isb-2/api/74929947-0837-48f9-99c4-852ebc2fdaf1/json/11586/RUP-StrukturAnggaranPD/tipe/4:12/parameter/"
+    },
     'ktn': {
       'urlRUP_SubKegiatanMaster' : "https://isb.lkpp.go.id/isb-2/api/7e64ea83-761a-4046-8d35-6678c7d0b8c7/json/9354/RUP-SubKegiatanMaster/tipe/4:12/parameter/",
       'urlRUP_KegiatanMaster' : "https://isb.lkpp.go.id/isb-2/api/3087d403-bc8c-4deb-beab-8d0da67dacbd/json/9345/RUP-KegiatanMaster/tipe/4:12/parameter/",
@@ -158,7 +170,7 @@ url_data = {
       'urlRUP_PaketAnggaranPenyedia' : "https://isb.lkpp.go.id/isb-2/api/cef78066-448e-481a-a252-ff8a5cd814d5/json/9355/RUP-PaketAnggaranPenyedia/tipe/4:12/parameter/",
       'urlRUP_MasterSatker' : "https://isb.lkpp.go.id/isb-2/api/41dde050-e0b3-478f-b13a-0d5907002ca2/json/9367/RUP-MasterSatker/tipe/12:12/parameter/",
       'urlRUP_StrukturAnggaran' : "https://isb.lkpp.go.id/isb-2/api/8004f7b5-208e-4501-9e35-c40ad790aac3/json/9384/RUP-StrukturAnggaranPD/tipe/4:12/parameter/"
-    },
+    }
 }
 
 
@@ -247,7 +259,7 @@ kodes = ["PROV", "BKY", "MLW", "PTK", "SGU", "SKD", "KPH", "KKR", "LDK", "SKW", 
 kodes = [kode.lower() for kode in kodes]
 jenisdatas = ["RUPSubKegiatanMaster", "RUPKegiatanMaster", "RUPPaketPenyediaTerumumkan", "RUPPaketSwakelolaTerumumkan", "RUPProgramMaster", "RUPPaketPenyediaLokasi",
               "RUPPaketSwakelolaLokasi", "RUPPaketAnggaranPenyedia", "RUPMasterSatker", "RUPStrukturAnggaran"]
-tahuns = ["2022", "2023"]
+tahuns = ["2022", "2023","2024"]
 
 # Generate and save URLs to a text file
 with open("generated_urls.txt", "w") as file:

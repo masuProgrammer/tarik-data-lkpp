@@ -27,4 +27,4 @@ def txt_to_csv(input_file, output_file):
             csv_writer.writerow([url_api.strip(), tahun, kode_daerah])
 
 # Memanggil fungsi untuk mengonversi file txt ke csv
-txt_to_csv('generated_urls.txt', 'output.csv')
+txt_to_csv('generated_urls_spse.txt', 'database_spse.csv')
