@@ -117,4 +117,4 @@ def tarik_data(file,jenis_api):
         #     # print(json.dumps(data_api, indent=2))
 
 tarik_data("database.csv","sirup")
-tarik_data("database.csv","spse")
+tarik_data("database_spse.csv","spse")
