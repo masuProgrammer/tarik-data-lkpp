@@ -37,7 +37,7 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
     # Membuat tahun_kode_daerah dari parameter
     if nama_api == 'Ecat-InstansiSatker':
         tahun_kode_daerah = f"{kode_daerah}"
-    else if nama_api == 'Bela-TokoDaringRealisasi':
+    elif nama_api == 'Bela-TokoDaringRealisasi':
         tahun_kode_daerah = f"{kode_daerah}:{tahun}"
     else:
         tahun_kode_daerah = f"{tahun}:{kode_daerah}"
