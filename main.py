@@ -35,7 +35,9 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
     nama_api = path_components[-4]  # Mengambil komponen sebelum terakhir
     kode_daerah = kode_daerah.replace("\n", "")
     # Membuat tahun_kode_daerah dari parameter
-    if nama_api == 'Ecat-InstansiSatker':
+    if nama_api == 'RUP-MasterSatker':
+        tahun_kode_daerah = f"{kode_daerah}:{tahun}"
+    elif nama_api == 'Ecat-InstansiSatker':
         tahun_kode_daerah = f"{kode_daerah}"
     elif nama_api == 'Bela-TokoDaringRealisasi':
         tahun_kode_daerah = f"{kode_daerah}:{tahun}"
