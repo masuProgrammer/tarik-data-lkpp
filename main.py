@@ -127,3 +127,4 @@ def tarik_data(file,jenis_api):
 tarik_data("database.csv","sirup")
 tarik_data("database_spse.csv","spse")
 tarik_data("database_epurchasing.csv","epurchasing")
+tarik_data("database_sikap.csv","sikap")
