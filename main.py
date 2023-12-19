@@ -72,6 +72,9 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
 
         nama_file_xlsx = f"{nama_folder}/{nama_api}{tahun}.xlsx"
         nama_file_parquet = f"{nama_folder}/{nama_api}{tahun}.parquet"
+        nama_file_xlsx = nama_file_xlsx.replace("\n", "")
+        nama_file_parquet = nama_file_parquet.replace("\n", "")
+        
 
         # Convert data to DataFrame
         df = pd.DataFrame(data)
