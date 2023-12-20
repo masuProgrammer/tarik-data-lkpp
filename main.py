@@ -63,9 +63,8 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
         if not os.path.exists(folder_output):
             os.makedirs(folder_output)
 
-        if nama_api == 'RUP-MasterSatker':
-            tahun, kode_daerah = kode_daerah, tahun
-
+        # if nama_api == 'RUP-MasterSatker':
+        #     tahun, kode_daerah = kode_daerah, tahun
 
         # Penamaan file berdasarkan tahun, kode daerah, dan nama API
         nama_folder = f"{folder_output}/{kode_daerah}/{jenis_api}"
