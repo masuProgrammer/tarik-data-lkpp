@@ -56,7 +56,7 @@ def cek_dan_perbarui_penyedia(kode_daerah, kd_penyedia):
             # Simpan DataFrame ke file parquet
             data_penyedia.to_parquet(file_path, index=False)
             
-            send_telegram_message(f"Data penyedia {kd_penyedia} berhasil ditambahkan ke {file_path}.")
+            # send_telegram_message(f"Data penyedia {kd_penyedia} berhasil ditambahkan ke {file_path}.")
         else:
             send_telegram_message(f"Gagal mengambil data dari API untuk {kd_penyedia}. Status code: {response.status_code}")
 
