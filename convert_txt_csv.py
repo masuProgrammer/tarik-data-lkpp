@@ -21,6 +21,8 @@ def txt_to_csv(input_file, output_file):
             # Using a ternary conditional expression to handle the IndexError
             tahun = tahun_kode[1] if len(tahun_kode) > 1 else ""
             kode_daerah = tahun_kode[0] if len(tahun_kode) > 0 else ""
+            tahun = tahun.replace("\n","")
+            kode_daerah = kode_daerah.replace("\n","")
 
             # Checking if the last part starts with "20" to determine if it's a year or code
             if kode_daerah.startswith("20"):
@@ -34,4 +36,4 @@ def txt_to_csv(input_file, output_file):
             csv_writer.writerow([url_api.strip(), tahun, kode_daerah])
 
 # Memanggil fungsi untuk mengonversi file txt ke csv
-txt_to_csv('generated_urls_sikap.txt', 'database_sikap.csv')
+txt_to_csv('generated_urls_spse.txt', 'database_spse.csv')
