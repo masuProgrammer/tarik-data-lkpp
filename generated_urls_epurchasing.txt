@@ -341,3 +341,13 @@ https://isb.lkpp.go.id/isb-2/api/f96d9e64-ddd4-4b0e-a890-7ee363b94a5d/json/4872/
 https://isb.lkpp.go.id/isb-2/api/f96d9e64-ddd4-4b0e-a890-7ee363b94a5d/json/4872/Ecat-PaketEPurchasing/tipe/4:12/parameter/2023:D118
 https://isb.lkpp.go.id/isb-2/api/f96d9e64-ddd4-4b0e-a890-7ee363b94a5d/json/4872/Ecat-PaketEPurchasing/tipe/4:12/parameter/2024:D118
 https://isb.lkpp.go.id/isb-2/api/24db686d-f672-4bcb-afb0-e1d040dbd970/json/4871/Ecat-InstansiSatker/tipe/12/parameter/D118
+https://isb.lkpp.go.id/isb-2/api/f827eeb4-43c0-4bf6-9efd-cdefc34edf1d/json/3197/Ecat-InstansiSatker/tipe/12/parameter/D423
+https://isb.lkpp.go.id/isb-2/api/784f7552-df80-4f77-849c-dbc9357324a3/json/3198/Ecat-PaketEPurchasing/tipe/4:12/parameter/2022:D423
+https://isb.lkpp.go.id/isb-2/api/784f7552-df80-4f77-849c-dbc9357324a3/json/3198/Ecat-PaketEPurchasing/tipe/4:12/parameter/2023:D423
+https://isb.lkpp.go.id/isb-2/api/784f7552-df80-4f77-849c-dbc9357324a3/json/3198/Ecat-PaketEPurchasing/tipe/4:12/parameter/2024:D423
+https://isb.lkpp.go.id/isb-2/api/4edabf43-b871-4aa5-8e75-4ae57cfe077c/json/3220/Bela-TokoDaringRealisasi/tipe/12:4/parameter/D423:2022
+https://isb.lkpp.go.id/isb-2/api/4edabf43-b871-4aa5-8e75-4ae57cfe077c/json/3220/Bela-TokoDaringRealisasi/tipe/12:4/parameter/D423:2023
+https://isb.lkpp.go.id/isb-2/api/4edabf43-b871-4aa5-8e75-4ae57cfe077c/json/3220/Bela-TokoDaringRealisasi/tipe/12:4/parameter/D423:2024
+https://isb.lkpp.go.id/isb-2/api/40a93c81-f712-4cc9-a4f5-19fe847f4261/json/3225/Ecat-PaketEPurchasing-Lama/tipe/12:4/parameter/D423:2022
+https://isb.lkpp.go.id/isb-2/api/40a93c81-f712-4cc9-a4f5-19fe847f4261/json/3225/Ecat-PaketEPurchasing-Lama/tipe/12:4/parameter/D423:2023
+https://isb.lkpp.go.id/isb-2/api/40a93c81-f712-4cc9-a4f5-19fe847f4261/json/3225/Ecat-PaketEPurchasing-Lama/tipe/12:4/parameter/D423:2024
