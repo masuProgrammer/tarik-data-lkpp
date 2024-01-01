@@ -95,7 +95,7 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
         print("datetime.now().year",datetime.now().year)
         if nama_api in ['RUP-StrukturAnggaranPD', 'RUP-PaketPenyedia-Terumumkan', 'RUP-PaketSwakelola-Terumumkan']:
             print("if nama_api in ['RUP-StrukturAnggaranPD', 'RUP-PaketPenyedia-Terumumkan', 'RUP-PaketSwakelola-Terumumkan']",True)
-        if nama_api in ['RUP-StrukturAnggaranPD', 'RUP-PaketPenyedia-Terumumkan', 'RUP-PaketSwakelola-Terumumkan'] and tahun == datetime.now().year:
+        if nama_api in ['RUP-StrukturAnggaranPD', 'RUP-PaketPenyedia-Terumumkan', 'RUP-PaketSwakelola-Terumumkan'] and tahun == str(datetime.now().year):
             print("Simpan data berjalan")
             bulan = datetime.now().strftime('%m')
             tanggal = datetime.now().strftime('%d')
