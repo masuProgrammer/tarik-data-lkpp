@@ -89,6 +89,10 @@ def panggil_api_dan_simpan(url_api, tahun, kode_daerah,jenis_api):
         df.to_parquet(nama_file_parquet, index=False)
         print(f"Data telah disimpan dalam file Parquet: {nama_file_parquet}")
 
+
+        print('nama_api',nama_api)
+        print('tahun',tahun)
+        print("datetime.now().year",datetime.now().year)
         if nama_api in ['RUP-StrukturAnggaranPD', 'RUP-PaketPenyedia-Terumumkan', 'RUP-PaketSwakelola-Terumumkan'] and tahun == datetime.now().year:
             bulan = datetime.now().strftime('%m')
             tanggal = datetime.now().strftime('%d')
