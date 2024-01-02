@@ -24,3 +24,7 @@ https://isb.lkpp.go.id/isb-2/api/d8745e6d-de12-4596-803e-05ad0a0c1a3b/json/12024
 https://isb.lkpp.go.id/isb-2/api/d8745e6d-de12-4596-803e-05ad0a0c1a3b/json/12024/SiKAP-PenilaianKinerjaPenyedia-NonTender/tipe/4:12/parameter/2024:D206
 https://isb.lkpp.go.id/isb-2/api/7b2c5665-f46c-445d-a3c7-c809f5ae4748/json/12553/SiKAP-PenilaianKinerjaPenyedia-NonTender/tipe/4:12/parameter/2024:D204
 https://isb.lkpp.go.id/isb-2/api/a07e40d6-5349-4401-9783-24e51c868d5f/json/12554/SIKaP-PenilaianKinerjaPenyedia-Tender/tipe/4:12/parameter/2024:D204
+https://isb.lkpp.go.id/isb-2/api/7b2c5665-f46c-445d-a3c7-c809f5ae4748/json/12553/SiKAP-PenilaianKinerjaPenyedia-NonTender/tipe/4:12/parameter/2023:D204
+https://isb.lkpp.go.id/isb-2/api/a07e40d6-5349-4401-9783-24e51c868d5f/json/12554/SIKaP-PenilaianKinerjaPenyedia-Tender/tipe/4:12/parameter/2023:D204
+https://isb.lkpp.go.id/isb-2/api/7b2c5665-f46c-445d-a3c7-c809f5ae4748/json/12553/SiKAP-PenilaianKinerjaPenyedia-NonTender/tipe/4:12/parameter/2022:D204
+https://isb.lkpp.go.id/isb-2/api/a07e40d6-5349-4401-9783-24e51c868d5f/json/12554/SIKaP-PenilaianKinerjaPenyedia-Tender/tipe/4:12/parameter/2022:D204
