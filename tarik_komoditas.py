@@ -65,7 +65,7 @@ def cek_dan_perbarui_komoditas(kode_daerah, kd_komoditas):
 
 # Fungsi untuk membaca data purchasing dan mengambil kd_komoditas
 def ambil_kd_komoditas(kode_daerah):
-    file_path = os.path.join(data_api_path, kode_daerah, "epurchasing", "Ecat-PaketEPurchasing2023.parquet")
+    file_path = os.path.join(data_api_path, kode_daerah, "epurchasing", "Ecat-PaketEPurchasing2024.parquet")
     try:
         data_purchasing = pd.read_parquet(file_path)
         kd_komoditas_unik = data_purchasing['kd_komoditas'].unique()

@@ -24,7 +24,7 @@ def send_telegram_message(message):
 def cek_dan_perbarui_penyedia(kode_daerah, kd_penyedia):
     data_api_path = "data_api"
     daerah_folder = kode_daerah
-    file_path = os.path.join(data_api_path, daerah_folder, "epurchasing", "ECATPenyediaDetail2023.parquet")
+    file_path = os.path.join(data_api_path, daerah_folder, "epurchasing", "ECATPenyediaDetail2024.parquet")
     try:
         # Cek apakah file parquet sudah ada
         if os.path.exists(file_path):
@@ -89,8 +89,8 @@ for daerah in daerah_folders:
         for kd_penyedia in kd_penyedia_daerah:
             cek_dan_perbarui_penyedia(daerah, kd_penyedia)
         # Setelah menjalankan cek_dan_perbarui_penyedia, konversi parquet ke Excel
-        file_path_parquet = os.path.join(data_api_path, daerah, "epurchasing", "ECATPenyediaDetail2023.parquet")
-        file_path_excel = os.path.join(data_api_path, daerah, "epurchasing", "ECATPenyediaDetail2023.xlsx")
+        file_path_parquet = os.path.join(data_api_path, daerah, "epurchasing", "ECATPenyediaDetail2024.parquet")
+        file_path_excel = os.path.join(data_api_path, daerah, "epurchasing", "ECATPenyediaDetail2024.xlsx")
         
         try:
             # Baca data dari parquet
